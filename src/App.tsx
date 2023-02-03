@@ -1,10 +1,10 @@
-import './styles/main.css';
+import { NavItem } from './components/NavItem/NavItem';
 
 function App() {
     return (
         <div className="App">
             <h1>Home</h1>
-            <button className="nav-item">Test</button>
+            <NavItem label="Test" href="#" />
         </div>
     );
 }
