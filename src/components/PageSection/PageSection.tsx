@@ -30,7 +30,9 @@ export const PageSection = ({
                 <SectionContent>
                     <h2>{subHeading}</h2>
                     <h3>{mainHeading}</h3>
-                    <SectionLink href={href}>{linkLabel}</SectionLink>
+                    <SectionLink href={href}>
+                        <span>{linkLabel}</span>
+                    </SectionLink>
                 </SectionContent>
             </SectionContainer>
         </Section>

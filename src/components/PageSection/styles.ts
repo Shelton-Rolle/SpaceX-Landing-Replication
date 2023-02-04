@@ -42,20 +42,42 @@ export const SectionContent = styled.div`
 `;
 
 export const SectionLink = styled.a`
-    font-size: 16px;
-    color: white;
-    position: relative;
-    margin-top: 30px;
+    transform: translate3d(0px, 0px, 0px);
+    min-width: 130px;
     padding: 0 15px;
-    border: 2px solid white;
+    margin: 30px 0 0;
+    border: 2px solid #fff;
+    display: inline-block;
     text-decoration: none;
     cursor: pointer;
-    display: inline-block;
-    text-align: center;
+    overflow: hidden;
+    font-weight: 700;
+    font-style: normal;
+    transition: color 1s cubic-bezier(0.25, 1, 0.25, 1),
+        background-color 1s cubic-bezier(0.25, 1, 0.25, 1);
+    transition-duration: 1s, 1s;
+    transition-timing-function: cubic-bezier(0.25, 1, 0.25, 1),
+        cubic-bezier(0.25, 1, 0.25, 1);
+    transition-delay: 0s, 0s;
+    transition-property: color, background-color;
+
+    span {
+        color: #fff;
+        font-size: 14px;
+        text-transform: uppercase;
+        text-align: center;
+        display: inline-block;
+        cursor: pointer;
+        padding: 15px 0;
+        width: 100%;
+    }
 
     &:hover {
-        color: black;
-        background: white;
+        background-color: #fff;
+
+        span {
+            color: black;
+        }
     }
 `;
 
