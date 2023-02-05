@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Item = styled.li`
     list-style-type: none;
+    margin: 0 12px;
 `;
 
 export const ItemLink = styled.a`
@@ -12,6 +13,11 @@ export const ItemLink = styled.a`
     background: none;
     width: fit-content;
     cursor: pointer;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
 
     &::after {
         content: '';
@@ -20,7 +26,7 @@ export const ItemLink = styled.a`
         left: 0;
         width: 100%;
         height: 1px;
-        background: #000;
+        background: #fff;
         transform: scaleX(0);
         transform-origin: right center;
         transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1),

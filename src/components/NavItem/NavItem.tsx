@@ -1,11 +1,17 @@
 import { Item, ItemLink } from './styles';
 
-interface NavItemProps {
+export interface NavItemI {
     label: string;
     href: string;
 }
 
-export const NavItem = ({ label, href }: NavItemProps) => {
+interface NavItemProps {
+    item: NavItemI;
+}
+
+export const NavItem = ({ item }: NavItemProps) => {
+    const { href, label } = item;
+
     return (
         <Item>
             <ItemLink href={href}>{label}</ItemLink>

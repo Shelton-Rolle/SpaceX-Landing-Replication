@@ -13,7 +13,6 @@ export const SectionContainer = styled.div`
     height: 100vh;
     max-width: 1400px;
     margin: 0 auto;
-    outline: 1px solid white;
 `;
 
 export const SectionImage = styled.img`

@@ -1,3 +1,4 @@
+import { NavBar } from './components/NavBar/NavBar';
 import { PageSection } from './components/PageSection/PageSection';
 import './styles/main.css';
 
@@ -10,6 +11,7 @@ const bg5 = require('./images/bg-5.webp');
 function App() {
     return (
         <div>
+            <NavBar />
             <PageSection
                 subHeading="Recent Launch"
                 mainHeading="Starlink Mission"
